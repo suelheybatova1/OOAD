@@ -1,0 +1,27 @@
+Random number generator analysis.
+
+General info about the assignment1: 
+
+This assignment is a simple Java-application, developed within the course of OOAD.
+Its goal is to show the basics of object-oriented approach and work with various built-in tools for generating random numbers in Java.
+The program creates random values in the interval [0, 1), performs their analysis and displays the results in tabular form
+
+Generators thats used:                                              
+The project uses the following standard Java generators:
+                                                   
+- java.util.Random
+- Math.random()
+- java.util.concurrent.ThreadLocalRandom               
+Each of them is checked on samples of different sizes
+
+Computable values:
+For each generated sample are calculated:
+                                                   
+- number of elements (n)
+- mean
+- sample standard deviation
+- minimum value
+- maximum value
+                                                   
+As the data volume increases, the results tend to theoretically expected values (average 0.5, standard deviation 0.29)                                         
+                                                  
