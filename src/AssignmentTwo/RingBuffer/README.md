@@ -39,10 +39,10 @@ This project implements a fixed-size **ring buffer** (capacity **N**) with:
 ![Class Diagram](UML_Class_Diagram.png)
 
 ### Sequence Diagram — `write()`
-![Write Diagram](UML_Sequence_write.png)
+![Write Diagram](UML_Sequence_Diagram_for_write().png)
 
 ### Sequence Diagram — `read()`
-![Read Diagram](UML_Sequence_read.png)
+![Read Diagram](UML_Sequence_Diagram_for_read().png)
 
 ## How to Run
 ### IntelliJ (recommended)
