@@ -81,7 +81,7 @@ public class Generator { // class definition
         if (headerOn) {
             System.out.printf("%-18s %-8s %-12s %-12s %-12s %-12s%n",
                     "Generator", "n", "mean", "stddev", "min", "max");
-            System.out.println("--------------------------------------------------------------------------");
+            System.out.println("------------------");
         }
         String genName = getGeneratorName();
         int n = results.get(0).intValue();
