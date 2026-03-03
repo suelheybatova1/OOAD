@@ -45,13 +45,13 @@ This project implements a fixed-size **ring buffer** (capacity **N**) with:
 ![Read Diagram](UML_Sequence_Diagram_for_read().png)
 
 ## How to Run
+
 ### IntelliJ (recommended)
-Open the project → run `DemoMain`.
+Open the project and run `DemoMain`.
 
-### Terminal (optional)
+### Terminal
+From the project root:
+
 ```bash
-javac -d out $(find . -name "*.java")
-java -cp out DemoMain
-
-
-
+javac -d out src/AssignmentTwo/RingBuffer/*.java
+java -cp out AssignmentTwo.RingBuffer.DemoMain
