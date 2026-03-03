@@ -1,13 +1,11 @@
 ## UML Class Diagram
 
-![Class Diagram](UML Class Diagram.png)
+![Class Diagram](UML_Class_Diagram.png)
 
 ## UML Sequence Diagram - write()
 
-![Write Diagram](UML Sequence Diagram for write().png)
+![Write Diagram](UML_Sequence_write.png)
 
 ## UML Sequence Diagram - read()
 
-![Read Diagram](UML Sequence Diagram for read().png)
-
-
+![Read Diagram](UML_Sequence_read.png)
