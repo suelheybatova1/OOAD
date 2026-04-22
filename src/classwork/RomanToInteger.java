@@ -3,16 +3,10 @@ package classwork;
 public class RomanToInteger {
 
     public static void main(String[] args) {
-
-        // test cases
-        test("III", 3);
-        test("IV", 4);
-        test("IX", 9);
-        test("LVIII", 58);
-        test("MCMXCIV", 1994);
+        runTestCases();
     }
 
-    // метод перевода
+    // Converts a Roman number to a normal integer number.
     public static int romanToInt(String s) {
         int result = 0;
 
@@ -29,7 +23,7 @@ public class RomanToInteger {
         return result;
     }
 
-    // значения символов
+    // Returns the integer value of one Roman symbol.
     public static int getValue(char c) {
         if (c == 'I') return 1;
         if (c == 'V') return 5;
@@ -41,14 +35,43 @@ public class RomanToInteger {
         return 0;
     }
 
-    // тест кейсы
-    public static void test(String input, int expected) {
+    // Test cases for checking the romanToInt method.
+    public static void runTestCases() {
+        int passed = 0;
+        int failed = 0;
+
+        if (test("I", 1)) passed++; else failed++;
+        if (test("II", 2)) passed++; else failed++;
+        if (test("III", 3)) passed++; else failed++;
+        if (test("IV", 4)) passed++; else failed++;
+        if (test("V", 5)) passed++; else failed++;
+        if (test("IX", 9)) passed++; else failed++;
+        if (test("X", 10)) passed++; else failed++;
+        if (test("XL", 40)) passed++; else failed++;
+        if (test("L", 50)) passed++; else failed++;
+        if (test("XC", 90)) passed++; else failed++;
+        if (test("C", 100)) passed++; else failed++;
+        if (test("CD", 400)) passed++; else failed++;
+        if (test("D", 500)) passed++; else failed++;
+        if (test("CM", 900)) passed++; else failed++;
+        if (test("M", 1000)) passed++; else failed++;
+        if (test("LVIII", 58)) passed++; else failed++;
+        if (test("MCMXCIV", 1994)) passed++; else failed++;
+
+        System.out.println();
+        System.out.println("Passed: " + passed);
+        System.out.println("Failed: " + failed);
+    }
+
+    public static boolean test(String input, int expected) {
         int result = romanToInt(input);
 
         if (result == expected) {
             System.out.println("PASS: " + input + " -> " + result);
+            return true;
         } else {
             System.out.println("FAIL: " + input + " -> " + result + " (expected " + expected + ")");
+            return false;
         }
     }
 }
